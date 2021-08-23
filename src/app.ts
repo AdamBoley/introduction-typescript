@@ -21,7 +21,7 @@ const person : Person = {
 const sayHelloToPerson = (p: Person) => {
     // Body of method
     // DRY
-    console.log(`Hello ${p.firstName} ${p.secondName}`)
+    console.log(`Hello ${p.firstName} ${p.secondName} your date of birth is ${p.dateOfBirth?.toDateString()}`)
 };
 
 sayHelloToPerson(person);
