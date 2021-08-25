@@ -1,9 +1,9 @@
 import { personGreeter } from "./PersonGreeter";
 
-const firstName = "Adam";
-const secondName = "Boley";
+//const firstName = "Adam";
+//const secondName = "Boley";
 
-console.log (`Hello ${firstName} ${secondName}`);
+//console.log (`Hello ${firstName} ${secondName}`);
 
 type Person = {
     firstName: string;
@@ -17,12 +17,16 @@ const person : Person = {
     dateOfBirth: new Date(1992, 9, 7)
 };
 
-// Arrow functions
-const sayHelloToPerson = (p: Person) => {
+ //Arrow functions
+ const sayHelloToPerson = (p: Person) => {
     // Body of method
     // DRY
     console.log(`Hello ${p.firstName} ${p.secondName} your date of birth is ${p.dateOfBirth?.toDateString()}`)
 };
 
 sayHelloToPerson(person);
+
+
+
+// to run this application, type npm run start in the terminal
 
